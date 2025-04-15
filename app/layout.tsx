@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Script from "next/script";
+import BachaoBachaoButton from "./components/BachaoBachaoButton";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.ayushmannagpurhospital.com"),
   title: "Best Orthopedic Surgeon in Nagpur - Dr. Murali B.K. | Ayushman Hospital",
   description: "Dr. Murali B.K. is Nagpur's top orthopedic surgeon specializing in joint replacements, knee surgery, spine surgery, and sports injuries. Book an appointment at Ayushman Hospital today.",
   keywords: "orthopedic surgeon Nagpur, best orthopedic doctor, knee replacement surgery, joint replacement, spine surgery Nagpur, Dr. Murali B.K., Ayushman Hospital, sports injury treatment",
@@ -130,12 +128,13 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.ayushmannagpurhospital.com" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} antialiased`}
       >
         <Navbar />
         <div className="pt-16">
           {children}
         </div>
+        <BachaoBachaoButton />
       </body>
     </html>
   );

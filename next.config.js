@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone',
   images: {
-    domains: ['www.ayushmannagpurhospital.com'],
+    domains: ['www.ayushmannagpurhospital.com', 'ayushmannagpurhospital.com'],
   },
   async redirects() {
     return [

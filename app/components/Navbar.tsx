@@ -2,9 +2,16 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isClient, setIsClient] = useState(false);
+  
+  // Check if we're on the client side
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   
   const navItems = [
     { name: "Home", path: "/" },

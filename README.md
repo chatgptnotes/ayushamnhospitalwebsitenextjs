@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ayushman Nagpur Hospital Website
 
-## Getting Started
+A professional website for Ayushman Nagpur Hospital, showcasing orthopedic services provided by Dr. Murali B.K.
 
-First, run the development server:
+## Project Overview
+
+This website includes:
+- Homepage with hospital information
+- Services/Procedures pages
+- Blog section with health articles
+- Doctor profile for Dr. Murali B.K.
+- Contact information
+
+## Local Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Server Deployment Guide
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This guide walks through deploying the website to a Linux VPS (Ubuntu/Debian).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- A VPS or cloud server (DigitalOcean, AWS, Linode, etc.)
+- Domain name pointing to your server
+- SSH access to your server
 
-To learn more about Next.js, take a look at the following resources:
+### Step 1: Server Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Update server packages
+sudo apt update && sudo apt upgrade -y
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Install Node.js and npm
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
 
-## Deploy on Vercel
+# Install PM2 for process management
+sudo npm install -g pm2
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Install Nginx
+sudo apt install -y nginx
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Set up firewall if needed
+sudo ufw allow 'Nginx Full'
+sudo ufw allow ssh
+sudo ufw enable
+```
+
+### Step 2: Deploy Application
+
+```bash
+# Clone repository (if using Git)
+git clone <your-repo-url> /var/www/ayushman-hospital
+
+# Or upload files via SFTP
+# scp -r ./test-next-app username@your_server_ip:/var/www/ayushman-hospital
+
+# Navigate to application directory
+cd /var/www/ayushman-hospital
+
+# Edit .env.local file with MongoDB Atlas connection
+# Note: You MUST set up MongoDB Atlas and update the connection string
+
+# Run deployment script
+./deploy.sh
+```
+
+### Step 3: Configure Nginx
+
+```bash
+# Copy Nginx configuration
+sudo cp nginx.conf /etc/nginx/sites-available/ayushman-hospital
+
+# Create symlink to enable site
+sudo ln -s /etc/nginx/sites-available/ayushman-hospital /etc/nginx/sites-enabled/
+
+# Test configuration
+sudo nginx -t
+
+# Restart Nginx
+sudo systemctl restart nginx
+```
+
+### Step 4: Set Up SSL with Let's Encrypt
+
+```bash
+# Install Certbot
+sudo apt install -y certbot python3-certbot-nginx
+
+# Obtain SSL certificate
+sudo certbot --nginx -d ayushmannagpurhospital.com -d www.ayushmannagpurhospital.com
+
+# Certbot will automatically update your Nginx configuration
+```
+
+### MongoDB Setup
+
+For production, you'll need to use MongoDB Atlas:
+
+1. Create a free account at [mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)
+2. Create a new cluster (free tier available)
+3. Set up a database user with password
+4. Get your connection string from Atlas dashboard
+5. Update the `.env.local` file with your connection string
+
+## Maintenance
+
+- To view logs: `pm2 logs ayushman-hospital`
+- To restart application: `pm2 restart ayushman-hospital`
+- To pull updates: Update your code then run `./deploy.sh`
+
+## Alternative Hosting Options
+
+For simpler deployment, consider:
+- Vercel: Connect GitHub repo for automatic deployment
+- Netlify: Similar to Vercel, with free tier available
+- AWS Amplify: Good for AWS users
