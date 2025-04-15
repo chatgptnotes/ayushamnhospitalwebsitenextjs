@@ -1,0 +1,14 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/procedures/page": "app/procedures/page.js",
+  "/orthopedic-surgeon-nagpur/page": "app/orthopedic-surgeon-nagpur/page.js",
+  "/procedures/spine-surgery/page": "app/procedures/spine-surgery/page.js",
+  "/procedures/knee-replacement-surgery/page": "app/procedures/knee-replacement-surgery/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/blog/osteoarthritis/page": "app/blog/osteoarthritis/page.js",
+  "/blog/sciatica/page": "app/blog/sciatica/page.js"
+}

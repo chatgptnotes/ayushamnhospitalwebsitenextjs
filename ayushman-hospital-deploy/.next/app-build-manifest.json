@@ -1,0 +1,114 @@
+{
+  "pages": {
+    "/_not-found": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/app/_not-found-b07a70f2d21ffabf.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/935-0f4fe8edde5bd4dd.js",
+      "static/css/e42840176e929378.css",
+      "static/chunks/app/layout-a6b6a73c1da10ab6.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/935-0f4fe8edde5bd4dd.js",
+      "static/chunks/app/page-76d1bcdfd236c598.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/935-0f4fe8edde5bd4dd.js",
+      "static/chunks/app/about/page-648537bf8dd19c08.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/app/contact/page-cbc04b30a5771f95.js"
+    ],
+    "/procedures/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/app/procedures/page-f68b470a98e46c49.js"
+    ],
+    "/orthopedic-surgeon-nagpur/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/935-0f4fe8edde5bd4dd.js",
+      "static/chunks/app/orthopedic-surgeon-nagpur/page-bab8bf2a01919302.js"
+    ],
+    "/procedures/spine-surgery/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/app/procedures/spine-surgery/page-78f8ad90edf327ce.js"
+    ],
+    "/procedures/knee-replacement-surgery/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/935-0f4fe8edde5bd4dd.js",
+      "static/chunks/app/procedures/knee-replacement-surgery/page-658c985dce4cdfe5.js"
+    ],
+    "/blog/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/935-0f4fe8edde5bd4dd.js",
+      "static/chunks/app/blog/page-8bdacbaa94117c8c.js"
+    ],
+    "/blog/layout": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/app/blog/layout-91255d395eb066f4.js"
+    ],
+    "/blog/osteoarthritis/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/935-0f4fe8edde5bd4dd.js",
+      "static/chunks/app/blog/osteoarthritis/page-c8b522b98de84fe6.js"
+    ],
+    "/blog/sciatica/page": [
+      "static/chunks/webpack-a5c9fe3de72d11de.js",
+      "static/chunks/fd9d1056-c50cb70e7323352b.js",
+      "static/chunks/69-971cc6ff58dfdad6.js",
+      "static/chunks/main-app-da5d366ec367617d.js",
+      "static/chunks/250-069982e43c2ae463.js",
+      "static/chunks/935-0f4fe8edde5bd4dd.js",
+      "static/chunks/app/blog/sciatica/page-d517659639953e57.js"
+    ]
+  }
+}
