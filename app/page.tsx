@@ -28,7 +28,7 @@ export default function Home() {
       />
       <div className="bg-white dark:bg-gray-900">
         {/* Bachaobachao.in Banner */}
-        <div className="bg-yellow-500 dark:bg-yellow-600 py-3">
+        <div className="bg-red-500 dark:bg-red-600 py-3">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-center items-center">
               <a 
