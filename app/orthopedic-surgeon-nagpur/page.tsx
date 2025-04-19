@@ -95,11 +95,7 @@ export default function OrthopedicSurgeonPage() {
     alt="Dr. Murali" 
     className="absolute inset-0 w-full h-full object-cover"
   />
-  
-  {/* Name initials overlay */}
-  <div className="z-10 text-white font-bold text-xl bg-black bg-opacity-50 px-2 py-1 rounded">
-    Dr. M.B.K.
-  </div>
+ 
 </div>
               </div>
               <div className="md:w-2/3 p-8">
