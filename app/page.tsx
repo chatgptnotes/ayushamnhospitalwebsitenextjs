@@ -8,7 +8,7 @@ export default function Home() {
     "@type": "MedicalClinic",
     "name": "Ayushman Nagpur Hospital",
     "url": "https://example.com",
-    "logo": "/public/hospital.jpg",
+    "logo": "hospital.jpg",
     "description": "Ayushman Nagpur Hospital is a premier orthopedic facility founded by Dr. Murali B.K., offering specialized care for bone, joint, and spine conditions.",
     "founder": {
       "@type": "Person",
