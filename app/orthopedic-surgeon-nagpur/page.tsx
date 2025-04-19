@@ -88,46 +88,19 @@ export default function OrthopedicSurgeonPage() {
           <div className="mb-12 bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/3 bg-blue-100 dark:bg-gray-700 p-8 flex items-center justify-center">
-                <div className="w-48 h-48 rounded-full bg-white dark:bg-gray-600 border-4 border-blue-500 dark:border-blue-400 flex items-center justify-center relative overflow-hidden shadow-inner">
-                  <svg className="absolute inset-0 w-full h-full text-blue-600 dark:text-blue-400" viewBox="0 0 100 100" fill="none">
-                    {/* Professional background */}
-                    <rect x="0" y="0" width="100" height="100" fill="currentColor" fillOpacity="0.05" />
-                    
-                    {/* Doctor's head */}
-                    <circle cx="50" cy="38" r="18" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1" />
-                    
-                    {/* Doctor's face features - subtle professional look */}
-                    <path d="M44 34 A2 2 0 0 1 46 36" stroke="currentColor" strokeWidth="0.7" />
-                    <path d="M54 34 A2 2 0 0 0 52 36" stroke="currentColor" strokeWidth="0.7" />
-                    <path d="M46 42 A6 4 0 0 0 52 42" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* Doctor's hair */}
-                    <path d="M32 38 Q32 26 50 24 Q68 26 68 38" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.2" />
-                    
-                    {/* Doctor's body/lab coat */}
-                    <path d="M30 60 V100 H70 V60" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1" />
-                    <path d="M40 60 V100" stroke="currentColor" strokeWidth="0.7" />
-                    <path d="M60 60 V100" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* Doctor's neck */}
-                    <path d="M42 56 V60 H58 V56" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* Stethoscope */}
-                    <circle cx="35" cy="65" r="3" fill="none" stroke="currentColor" strokeWidth="0.7" />
-                    <path d="M35 68 Q30 75 35 80 H45" fill="none" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* White coat collar */}
-                    <path d="M40 60 L50 68 L60 60" fill="none" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* Professional badge */}
-                    <rect x="52" y="68" width="6" height="8" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="0.5" />
-                  </svg>
-                  
-                  {/* Name initials overlay */}
-                  <div className="z-10 text-blue-600 dark:text-blue-400 font-bold text-xl">
-                    Dr. M.B.K.
-                  </div>
-                </div>
+              <div className="w-48 h-48 rounded-full bg-white dark:bg-gray-600 border-4 border-blue-500 dark:border-blue-400 flex items-center justify-center relative overflow-hidden shadow-inner">
+  {/* Image of Dr. Murali */}
+  <img 
+    src="https://drmurali.ai/docImg/Murali.jpg" 
+    alt="Dr. Murali" 
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  
+  {/* Name initials overlay */}
+  <div className="z-10 text-white font-bold text-xl bg-black bg-opacity-50 px-2 py-1 rounded">
+    Dr. M.B.K.
+  </div>
+</div>
               </div>
               <div className="md:w-2/3 p-8">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Dr. Murali B.K., MBBS, MS (Ortho)</h2>
