@@ -87,7 +87,7 @@ export default function OrthopedicSurgeonPage() {
           {/* Doctor Profile Section */}
           <div className="mb-12 bg-gradient-to-r from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg overflow-hidden">
             <div className="md:flex">
-              <div className="md:w-1/3 bg-blue-100 dark:bg-gray-700 p-8 flex items-center justify-center">
+              <div className="md:w-1/3 p-8 flex items-center justify-center">
               <div className="w-48 h-48 rounded-full bg-white dark:bg-gray-600 border-4 border-blue-500 dark:border-blue-400 flex items-center justify-center relative overflow-hidden shadow-inner">
   {/* Image of Dr. Murali */}
   <img 
