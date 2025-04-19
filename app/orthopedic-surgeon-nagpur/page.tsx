@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Looking for the best orthopedic surgeon in Nagpur? Dr. Murali B.K. offers expert knee replacement, hip replacement, spine surgery & sports injury treatment with 15+ years experience. Book an appointment today: 7030974619.",
   keywords: "best orthopedic surgeon Nagpur, Dr. Murali B.K., knee replacement surgeon, hip replacement Nagpur, spine surgery specialist, sports injury doctor, joint replacement expert, top orthopedic doctor",
   alternates: {
-    canonical: "https://www.ayushmannagpurhospital.com/orthopedic-surgeon-nagpur"
+    canonical: "https://theayushmanhospital.com/wp-content/uploads/2022/07/Web-logo.png"
   },
 };
 
