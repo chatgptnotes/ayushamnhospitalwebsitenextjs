@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ayushman-hospital-website": "file:",
     "bcryptjs": "^3.0.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
