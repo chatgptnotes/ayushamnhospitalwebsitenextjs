@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "Blog", path: "/blog" },
     { name: "Dr. Murali B.K.", path: "/orthopedic-surgeon-nagpur" },
     { name: "Contact", path: "/contact" },
+    { name: "Log In", path: "/admin" },
   ];
   
   return (

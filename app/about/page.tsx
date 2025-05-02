@@ -59,47 +59,14 @@ export default function AboutPage() {
               </div>
               <div className="mt-12 lg:mt-0 flex justify-center">
                 <div className="h-64 w-64 rounded-full bg-white dark:bg-gray-700 border-4 border-blue-500 dark:border-blue-400 shadow-lg flex items-center justify-center relative overflow-hidden">
-                  <svg className="absolute inset-0 w-full h-full text-blue-600 dark:text-blue-400" viewBox="0 0 100 100" fill="none">
-                    {/* Professional background */}
-                    <rect x="0" y="0" width="100" height="100" fill="currentColor" fillOpacity="0.05" />
-                    
-                    {/* Doctor's head */}
-                    <circle cx="50" cy="38" r="18" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1" />
-                    
-                    {/* Doctor's face features - subtle professional look */}
-                    <path d="M44 34 A2 2 0 0 1 46 36" stroke="currentColor" strokeWidth="0.7" />
-                    <path d="M54 34 A2 2 0 0 0 52 36" stroke="currentColor" strokeWidth="0.7" />
-                    <path d="M46 42 A6 4 0 0 0 52 42" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* Doctor's hair */}
-                    <path d="M32 38 Q32 26 50 24 Q68 26 68 38" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.2" />
-                    
-                    {/* Doctor's body/lab coat */}
-                    <path d="M30 60 V100 H70 V60" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1" />
-                    <path d="M40 60 V100" stroke="currentColor" strokeWidth="0.7" />
-                    <path d="M60 60 V100" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* Doctor's neck */}
-                    <path d="M42 56 V60 H58 V56" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* Stethoscope */}
-                    <circle cx="35" cy="65" r="3" fill="none" stroke="currentColor" strokeWidth="0.7" />
-                    <path d="M35 68 Q30 75 35 80 H45" fill="none" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* White coat collar */}
-                    <path d="M40 60 L50 68 L60 60" fill="none" stroke="currentColor" strokeWidth="0.7" />
-                    
-                    {/* Professional badge */}
-                    <rect x="52" y="68" width="6" height="8" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="0.5" />
-                    
-                    {/* Glasses - adding a professional touch */}
-                    <path d="M40 34 Q45 32 50 34 Q55 32 60 34" fill="none" stroke="currentColor" strokeWidth="0.6" />
-                  </svg>
+                <img 
+    src="https://drmurali.ai/docImg/Murali.jpg" 
+    alt="Dr. Murali" 
+    className="absolute inset-0 w-full h-full object-cover"
+  />
                   
                   {/* Name overlay */}
-                  <div className="z-10 text-blue-600 dark:text-blue-400 font-bold text-xl">
-                    Dr. M.B.K.
-                  </div>
+                  
                 </div>
               </div>
             </div>

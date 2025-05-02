@@ -1,8 +1,4 @@
 {
-  "/page": "app/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/api/appointments/[id]/route": "app/api/appointments/[id]/route.js",
-  "/api/appointments/route": "app/api/appointments/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/contact/page": "app/contact/page.js"
+  "/page": "app/page.js"
 }
