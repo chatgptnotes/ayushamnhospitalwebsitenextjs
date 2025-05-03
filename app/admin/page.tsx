@@ -284,9 +284,9 @@ export default function AdminDashboard() {
                           className="px-2 py-1 rounded border border-gray-300 focus:outline-none"
                           style={{
                             backgroundColor:
-                              e => e.target.value === 'completed'
+                              appointment.status === 'completed'
                                 ? '#bbf7d0'
-                                : e.target.value === 'cancelled'
+                                : appointment.status === 'cancelled'
                                 ? '#fecaca'
                                 : 'white',
                           }}
