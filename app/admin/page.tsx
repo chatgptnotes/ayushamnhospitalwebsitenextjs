@@ -280,7 +280,7 @@ export default function AdminDashboard() {
                       <td className="px-6 py-4 whitespace-nowrap text-sm">
                         <select
                           value={appointment.status}
-                          onChange={e => updateStatus(appointment._id, e.target.value)}
+                          onChange={(e: React.ChangeEvent<HTMLSelectElement>) => updateStatus(appointment._id, e.target.value)}
                           className="px-2 py-1 rounded border border-gray-300 focus:outline-none"
                           style={{
                             backgroundColor:
